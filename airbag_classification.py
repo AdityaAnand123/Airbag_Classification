@@ -97,7 +97,7 @@ class Airbag_Deployment_Detection:
             self.predict_on_frame(img=self.frame)
             self.create_frame_icons()
             if self.class_idx == AIRBAG_PREDICTION_INDEX:
-                print("[Prediction] An airbag has deployed!")
+                #print("[Prediction] An airbag has deployed!")
                 cv2.putText(self.frame, self.text, (300, 30),
                             cv2.FONT_HERSHEY_SIMPLEX, 0.7, self.color, 2)
             if self.class_idx == NON_AIRBAG_PREDICTION_INDEX:
